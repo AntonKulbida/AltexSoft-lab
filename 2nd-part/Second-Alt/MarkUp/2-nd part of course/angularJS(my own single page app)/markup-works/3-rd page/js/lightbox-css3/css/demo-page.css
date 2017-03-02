@@ -1,0 +1,115 @@
+// /* Базовые стили демо-страницы */
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+
+// *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+// body, html { font-size: 100%; padding: 0; margin: 0; }
+
+// /* Clearfix хак от Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+// .clearfix:before, .clearfix:after { content: " "; display: table; }
+// .clearfix:after { clear: both; }
+
+
+// a:hover,
+// a:active {
+// 	color: #333;
+// }
+// /* Основное содержание */
+// .main {
+// 	max-width: 69em;
+// }
+
+// .column {
+// 	float: left;
+// 	width: 50%;
+// 	padding: 0 2em;
+// 	min-height: 300px;
+// 	position: relative;
+// }
+
+// .column:nth-child(2) {
+// 	box-shadow: -1px 0 0 rgba(0,0,0,0.1);
+// }
+
+// .column p {
+// 	font-weight: 300;
+// 	font-size: 1.5em;
+// 	padding: 0;
+// 	margin: 0;
+// 	text-align: right;
+// 	line-height: 1.5;
+// }
+
+// /* Стиль верхней навигации */
+// .nav-top {
+// 	background: #3B7BAD;
+// 	text-transform: uppercase;
+// 	width: 100%;
+// 	font-size: 0.69em;
+// 	line-height: 2.2;position: fixed;z-index: 10;
+// }
+
+// .nav-top a {
+// 	color:#FFCE84;
+// 	padding: 0 1em;
+// 	letter-spacing: 0.1em;
+// 	display: inline-block;
+// }
+
+// .nav-top a:hover {
+// 	color: #e74c3c;
+// 	background: rgba(255,255,255,0.6);
+// }
+
+// .nav-top span.right {
+// 	float: right;
+// }
+
+// .nav-top span.right a {
+// 	float: left;
+// 	display: block;
+// }
+
+// button {
+// 	border: none;
+// 	padding: 0.6em 1.2em;
+// 	background: rgb(48, 127, 180);
+// 	color: #fff;
+// 	font-family: 'Lato', Calibri, Arial, sans-serif;
+// 	font-size: 1em;
+// 	letter-spacing: 1px;
+// 	text-transform: uppercase;
+// 	cursor: pointer;
+// 	display: inline-block;
+// 	margin: 3px 2px;
+// 	border-radius: 2px;
+// }
+
+// button:hover {
+// 	background: rgb(47, 114, 199);
+// }
+
+// @media screen and (max-width: 46.0625em) {
+// 	.column {
+// 		width: 100%;
+// 		min-width: auto;
+// 		min-height: auto;
+// 		padding: 1em; 
+// 	}
+
+// 	.column p {
+// 		text-align: left;
+// 		font-size: 1.5em;
+// 	}
+
+// 	.column:nth-child(2) {
+// 		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+// 	}
+// }
+	
+// @media screen and (max-width: 25em) {
+
+// 	.codrops-icon span {
+// 		display: none;
+// 	}
+
+// }

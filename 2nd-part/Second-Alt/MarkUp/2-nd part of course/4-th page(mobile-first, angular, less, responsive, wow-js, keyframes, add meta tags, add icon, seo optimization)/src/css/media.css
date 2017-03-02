@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Radjhani";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/rajdhani.regular.ttf");
+}
+@media only screen and (min-width : 319px) {
+
+  // .top-container{
+  //   width: 735px;
+  //   margin: -3px;
+  // }
+
+  // .top-bottom{
+  //   height: 37px;
+  //   justify-content: space-around;
+  //   align-items: center;
+  // }
+
+  .top-bottom-text p{
+    padding-left: 90px;
+  }
+
+    .menu-basket{
+
+      height: 460px;
+      width: 295px;
+      right: 0px;
+      z-index: 3;
+      top:0px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-basket-header{
+      // font-family: "Radjhani";
+      height:68px;
+      width: 280px;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      background-color: black;
+    }
+
+    .menu-basket-header span{
+      // font-family: "Rajdhani";
+      font-size: 22px;
+      padding-left: 22px;
+      color: white;
+    }
+
+    .menu-basket-items{
+      height: 476px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .menu-basket-item{
+      height: 119px;
+      width: 290px;
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      border-bottom: 0.5px solid;
+      border-bottom-color: #575757;
+    }
+
+    .top-bottom-login a{
+      z-index: 5;
+    }
+
+    .plus-sun-price{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 212px;
+    }
+    .plus-sun-price a {
+    width: 50px;
+    }
+
+    .plus-sun-price span{
+      // font-family: "Rajdhani Semibold";
+      font-size: 20px;
+      // padding-top: 5px;
+    }
+
+    .minus-rice-plus{
+      height: 27px;
+      width: 108px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .minus-rice-plus img{
+      padding-bottom: 0px;
+      width: 25px;
+      height: 25px;
+    }
+
+    .menu-basket-conqlusion{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      background-color: #dcdcdc;
+    }
+
+    .menu-basket-conqlusion h3{
+      // font-family: "Rajdhani Semibold";
+      font-size: 20px;
+      padding-left: 20px;
+    }
+
+    .menu-basket-conqlusion span{
+      // font-family: "Rajdhani Regular";
+      font-size: 20px;
+      color: #292929;
+      padding-right: 5px;
+    }
+
+    .menu-basket-bottom{
+      display: flex;
+      height: 58px;
+      background-color: black;
+    }
+
+    .price{
+      height: 20px;
+      width: 41px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #d1d1d1;
+    }
+
+    .price{
+      // font-family: "Rajdhani Regular";
+      font-size: 20px;
+    }
+
+    .cross-rs{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 115px;
+      width: 94px;
+    }
+
+    .cross-rs span{
+      // font-family: "Rajdhani Regular";
+      font-size: 20px;
+      color: #292929;
+    }
+
+    .cross-rs a{
+      padding-top: 5px;
+    }
+
+    .menu-basket-bottom-text-left{
+      width: 192px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+    }
+
+    .menu-basket-bottom-text-left span{
+      // font-family: "Rajdhani Bold";
+      font-size: 18px;
+      color:  #b3b3b3;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    .menu-basket-bottom-text-right{
+      width: 223px;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-around;s
+      background-color: black;
+    }
+
+    .menu-basket-bottom-text-right span{
+      // font-family: "Rajdhani Bold";
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: white;
+    }
+ .img-bg-basket-item{
+      display: flex;
+      height: 100%;
+      width: 100px;
+      flex-direction: column;
+      background-image: url(../img/mini-img.png);
+      background-size: cover;
+    }
+    .menu-basket-bottom-text-right a img{
+      margin-top: 10px;
+      width: 10px !important;
+      height: 15px !important;
+    }
+
+}
+
+@media only screen and (min-width : 1231px) {
+
+  // .menu-basket-header{
+  //   height:48px;
+  //   margin-top: 10px;
+  // }
+
+  // .top-container{
+  //   // position: relative;
+  //   // width: 1231px;
+  // }
+
+  // .top-bottom{
+  //   height: 46px;
+  // }
+
+}

@@ -1,0 +1,126 @@
+.containerdrop {
+    width: 100%;
+    // max-width: 900px;
+    margin: 10px auto;
+    font-size: 17px;
+    text-shadow: 1px 1px 0 #000;
+}
+.toggleMenu {
+    display:  none;
+    background: #11a76a;
+    padding: 10px 15px;
+    color: #fff;
+}
+.nav {
+    list-style: none;
+     // *zoom: 1;
+     background: rgba(26, 179, 116, 0.7);
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+
+}
+.nav a {
+    padding: 10px 20px;
+    color:#fff;
+    text-align: center;
+}
+.nav a:hover{
+    color: #ffbc00;
+    text-shadow: 1px 1px 0 #000;
+}
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+    // border-top: 1px solid #104336;
+}
+.nav > li > .parent {
+    background-image: url("..img/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+    margin-top: 0px;
+
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background: #1d7a62;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #11a76a;
+    background: rgba(26, 179, 116, 1);
+}
+.nav li li li a {
+    background:#249578;
+    z-index:200;
+    // border-top: 1px solid #1d7a62;
+    background: rgba(26, 179, 110, .7);
+}
+
+@media screen and (min-width: 628px) and (max-width: 1190px) {
+    .nav a {
+    padding: 10px 10px;
+    color:#fff;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .toggleMenu{
+        width: 96%;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("..img/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .toggleMenu{
+        width: 25%;
+        text-align: center;
+    }
+}

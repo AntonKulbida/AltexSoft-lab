@@ -1,0 +1,8 @@
+c:\users\сергей\documents\visual studio 2012\Projects\Task_10_1\Task_10_1\bin\Debug\Task_10_1.exe.config
+c:\users\сергей\documents\visual studio 2012\Projects\Task_10_1\Task_10_1\bin\Debug\Task_10_1.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task_10_1\Task_10_1\bin\Debug\Task_10_1.pdb
+c:\users\сергей\documents\visual studio 2012\Projects\Task_10_1\Task_10_1\obj\Debug\Task_10_1.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task_10_1\Task_10_1\obj\Debug\Task_10_1.pdb
+D:\AltexSoft-Courses\week_3\Task_10_1\Task_10_1\bin\Debug\Task_10_1.exe.config
+D:\AltexSoft-Courses\week_3\Task_10_1\Task_10_1\obj\Debug\Task_10_1.exe
+D:\AltexSoft-Courses\week_3\Task_10_1\Task_10_1\obj\Debug\Task_10_1.pdb

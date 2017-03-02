@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EnterStudentsAge" xml:space="preserve">
+    <value>Enter students age (integer)</value>
+  </data>
+  <data name="EnterStudentsFirtsName" xml:space="preserve">
+    <value>Enter students firts name</value>
+  </data>
+  <data name="EnterStudentsLastName" xml:space="preserve">
+    <value>Enter students last name</value>
+  </data>
+  <data name="InvalidAgeValue" xml:space="preserve">
+    <value>Invalid Age value. It should be integer</value>
+  </data>
+  <data name="EnterTeachersFirtsName" xml:space="preserve">
+    <value>Enter teachers firts name</value>
+  </data>
+  <data name="EnterTeachersLastName" xml:space="preserve">
+    <value>Enter teachers last name</value>
+  </data>
+  <data name="EnterTeachersAge" xml:space="preserve">
+    <value>Enter teachers age (integer)</value>
+  </data>
+  <data name="InvalidId" xml:space="preserve">
+    <value>Invalid Id. It should be integer</value>
+  </data>
+  <data name="WrongId" xml:space="preserve">
+    <value>Wrong Id. Please try again</value>
+  </data>
+  <data name="AllTeachers" xml:space="preserve">
+    <value>All teachers</value>
+  </data>
+  <data name="AllStudents" xml:space="preserve">
+    <value>All students</value>
+  </data>
+  <data name="PickTeacherToAssign" xml:space="preserve">
+    <value>Enter Id of the teacher, whom you want to assign to a student</value>
+  </data>
+  <data name="PickStudentToAssign" xml:space="preserve">
+    <value>Enter Id of the student, to whom you want to assign the teacher</value>
+  </data>
+  <data name="NoTeacherAssigned" xml:space="preserve">
+    <value>No teacher assigned</value>
+  </data>
+  <data name="CommandFormat" xml:space="preserve">
+    <value>{0,-15}{1}</value>
+    <comment>0 - Command Name</comment>
+  </data>
+  <data name="NestedElementFormat" xml:space="preserve">
+    <value>    {0}</value>
+    <comment>0 - PersonToStringFormat</comment>
+  </data>
+  <data name="NoStudents" xml:space="preserve">
+    <value>No Students</value>
+  </data>
+  <data name="CommandDescription_AddStudent" xml:space="preserve">
+    <value>Adds new student to the database</value>
+  </data>
+  <data name="CommandDescription_AddTeacher" xml:space="preserve">
+    <value>Adds new teacher to the database</value>
+  </data>
+  <data name="CommandDescription_AssignTeacher" xml:space="preserve">
+    <value>Assigns teacher to a student</value>
+  </data>
+  <data name="CommandDescription_Clear" xml:space="preserve">
+    <value>Clears the console window of display information</value>
+  </data>
+  <data name="CommandDescription_Exit" xml:space="preserve">
+    <value>Quits the application</value>
+  </data>
+  <data name="CommandDescription_Help" xml:space="preserve">
+    <value>Shows all available commands</value>
+  </data>
+  <data name="CommandDescription_PrintStudents" xml:space="preserve">
+    <value>Prints students list with its teachers</value>
+  </data>
+  <data name="CommandDescription_PrintTeachers" xml:space="preserve">
+    <value>Prints teachers list with all their students</value>
+  </data>
+  <data name="CommandDoesNotExist" xml:space="preserve">
+    <value>Command does not exist. Type "help" to see commans list</value>
+  </data>
+  <data name="PersonToStringFormat" xml:space="preserve">
+    <value>{0} - {1} {2}</value>
+    <comment>0 - Id, 1 - First Name, 2 - Last Name</comment>
+  </data>
+  <data name="PickStudentToDelete" xml:space="preserve">
+    <value>Enter Id of the student, whom you want to delete</value>
+  </data>
+  <data name="PickTeacherToDelete" xml:space="preserve">
+    <value>Enter Id of the teacher, whom you want to delete</value>
+  </data>
+  <data name="CommandDescription_DelStudent" xml:space="preserve">
+    <value>Deletes student from the database</value>
+  </data>
+  <data name="CommandDescription_DelTeacher" xml:space="preserve">
+    <value>Deletes teacher from the database</value>
+  </data>
+  <data name="NoStudentsToAssign" xml:space="preserve">
+    <value>No students to assign</value>
+  </data>
+  <data name="UnableSaveChanges" xml:space="preserve">
+    <value>Unable to save changes. The entity was deleted by another user</value>
+  </data>
+  <data name="AllStudentsAssignedToTheTeacherFormat" xml:space="preserve">
+    <value>All students assigned to the {0}</value>
+    <comment>0 - Teschers full name</comment>
+  </data>
+  <data name="AllTeachersWithAssignedStudents" xml:space="preserve">
+    <value>All teachers with assigned students</value>
+  </data>
+  <data name="CommandDescription_RevokeTeacher" xml:space="preserve">
+    <value>Revokes teacher from the student</value>
+  </data>
+  <data name="PersonFullNameFormat" xml:space="preserve">
+    <value>{0} {1}</value>
+    <comment>0 - First Name, 1 - Last Name</comment>
+  </data>
+  <data name="PickStudentToRevoke" xml:space="preserve">
+    <value>Enter Id of the student, whom you want to revoke from the teacher</value>
+  </data>
+  <data name="PickTeacherToRevoke" xml:space="preserve">
+    <value>Enter Id of the teacher, whom you want to revoke</value>
+  </data>
+  <data name="PickStudentToUpdate" xml:space="preserve">
+    <value>Enter Id of the student who you want to update</value>
+  </data>
+  <data name="PickTeacherToUpdate" xml:space="preserve">
+    <value>Enter Id of the teacher who you want to update</value>
+  </data>
+</root>

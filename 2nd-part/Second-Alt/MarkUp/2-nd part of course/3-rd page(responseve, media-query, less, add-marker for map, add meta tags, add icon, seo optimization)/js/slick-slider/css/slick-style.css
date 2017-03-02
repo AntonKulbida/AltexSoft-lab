@@ -1,0 +1,23 @@
+/* Стили для сладера */
+
+.sl__img {
+	// border: 5px solid #141b26;
+}
+.sl{
+  max-width: 55%;
+  min-width: 55%;
+  margin: 0 auto;
+  outline: none;
+}
+.sl__slide {
+	// margin: 20px;
+  // width: 150px !important;
+  outline: none;
+
+}
+
+/*Адаптивность картинок */
+img{
+  width: 170px;
+  height: auto;
+}

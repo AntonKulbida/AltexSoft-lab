@@ -1,0 +1,12 @@
+c:\users\сергей\documents\visual studio 2012\Projects\sql_week5\sql_week5\bin\Debug\sql_week5.exe.config
+c:\users\сергей\documents\visual studio 2012\Projects\sql_week5\sql_week5\obj\Debug\sql_week5.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\documents\visual studio 2012\Projects\sql_week5\sql_week5\bin\Debug\sql_week5.exe
+C:\Users\Сергей\documents\visual studio 2012\Projects\sql_week5\sql_week5\bin\Debug\sql_week5.pdb
+C:\Users\Сергей\documents\visual studio 2012\Projects\sql_week5\sql_week5\obj\Debug\sql_week5.exe
+C:\Users\Сергей\documents\visual studio 2012\Projects\sql_week5\sql_week5\obj\Debug\sql_week5.pdb
+D:\AltexSoft-Courses\week_5\sql_week5\sql_week5\bin\Debug\sql_week5.exe.config
+D:\AltexSoft-Courses\week_5\sql_week5\sql_week5\obj\Debug\sql_week5.exe
+D:\AltexSoft-Courses\week_5\sql_week5\sql_week5\obj\Debug\sql_week5.pdb
+D:\AltexSoft-Courses\week_5\ado\sql_week5\bin\Debug\sql_week5.exe.config
+D:\AltexSoft-Courses\week_5\ado\sql_week5\obj\Debug\sql_week5.exe
+D:\AltexSoft-Courses\week_5\ado\sql_week5\obj\Debug\sql_week5.pdb

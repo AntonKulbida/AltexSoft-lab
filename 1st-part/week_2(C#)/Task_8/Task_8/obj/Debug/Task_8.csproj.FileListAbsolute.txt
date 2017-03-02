@@ -1,0 +1,8 @@
+c:\users\сергей\documents\visual studio 2012\Projects\Task_8\Task_8\bin\Debug\Task_8.exe.config
+c:\users\сергей\documents\visual studio 2012\Projects\Task_8\Task_8\bin\Debug\Task_8.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task_8\Task_8\bin\Debug\Task_8.pdb
+c:\users\сергей\documents\visual studio 2012\Projects\Task_8\Task_8\obj\Debug\Task_8.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task_8\Task_8\obj\Debug\Task_8.pdb
+D:\AltexSoft-Courses\week_2\Task_8\Task_8\bin\Debug\Task_8.exe.config
+D:\AltexSoft-Courses\week_2\Task_8\Task_8\obj\Debug\Task_8.exe
+D:\AltexSoft-Courses\week_2\Task_8\Task_8\obj\Debug\Task_8.pdb

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://school.com"
+           xmlns:mstns="http://school.com"
+           targetNamespace="http://school.com">
+  <xs:element name="dataAccess">
+    <xs:complexType>
+      <xs:all>
+          <xs:element name="serialization" type="SerializationElementType" minOccurs="0" maxOccurs="1" />
+          <xs:element name="database" type="DatabaseElementType" minOccurs="0" maxOccurs="1" />
+        </xs:all>
+      <xs:attribute name="storageType" type="StorageType" use="required" />
+      <xs:anyAttribute namespace="http://schemas.microsoft.com/XML-Document-Transform" processContents="strict"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="StorageType">
+    <xs:restriction base="NonEmptyStringType">
+      <xs:enumeration value="Serialization" />
+      <xs:enumeration value="Database" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SerializerType">
+    <xs:restriction base="NonEmptyStringType">
+      <xs:enumeration value="Xml" />
+      <xs:enumeration value="Binary" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="SerializationElementType">
+    <xs:attribute name="filePath" type="NonEmptyStringType" use="required" />
+    <xs:attribute name="type" type="SerializerType" use="required" />
+    <xs:anyAttribute namespace="http://schemas.microsoft.com/XML-Document-Transform" processContents="strict"/>
+  </xs:complexType>
+
+  <xs:complexType name="DatabaseElementType">
+    <xs:attribute name="connectionString" type="NonEmptyStringType" use="required" />
+    <xs:anyAttribute namespace="http://schemas.microsoft.com/XML-Document-Transform" processContents="strict"/>
+  </xs:complexType>
+
+  <xs:simpleType name="NonEmptyStringType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,407 @@
+@font-face {
+    font-family: "Radjhani";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/rajdhani.regular.ttf");
+}
+@font-face {
+    font-family: "Radjhani Bold";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Rajdhani-Bold.ttf");
+}
+
+body.open,
+body:after {
+    overflow: hidden
+}
+
+.b-nav,
+body:after {
+    position: absolute
+}
+
+.b-brand,
+.b-link {
+    font-family: "Radjhani Bold", sans-serif;
+    text-decoration: none;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-250px, 0, 0);
+        transform: translate3d(-250px, 0, 0);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-250px, 0, 0);
+        transform: translate3d(-250px, 0, 0);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-webkit-keyframes slideOutLeft {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        -webkit-transform: translate3d(-250px, 0, 0);
+        transform: translate3d(-250px, 0, 0);
+        visibility: hidden
+    }
+}
+
+@keyframes slideOutLeft {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        -webkit-transform: translate3d(-250px, 0, 0);
+        transform: translate3d(-250px, 0, 0);
+        visibility: hidden
+    }
+}
+
+body:after {
+    background: rgba(0, 0, 0, 0.7);
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    top: 0;
+    visibility: hidden;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    width: 100%
+}
+.open:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.b-nav {
+    z-index: 11;
+    border: 1px solid #fff;
+    width: 20%;
+
+}
+
+.b-nav:not(.open) {
+    visibility: hidden
+}
+
+.b-nav li {
+    list-style-type: none;
+    border: 1px solid;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+    -webkit-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+}
+
+.b-nav li:not(.open) {
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft
+}
+
+.b-nav li:not(.open),
+.b-nav.open li {
+    -webkit-animation-duration: .4s;
+    -webkit-animation-fill-mode: both
+}
+
+.b-nav li:first-child {
+    padding-top: 80px;
+    font-size: 30px;
+}
+
+.b-nav.open {
+    visibility: visible
+}
+
+.b-nav.open li {
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft
+}
+
+.b-link {
+    border-left: rgba(255, 255, 255, 0)solid 2px;
+    color: #000;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    width: auto
+}
+
+.b-link,
+.b-menu {
+    -webkit-transition: all .4s ease
+}
+
+.b-link--active,
+.b-link:hover {
+    border-left: #fff solid 2px;
+    padding-left: 30px
+}
+
+.b-menu {
+    cursor: pointer;
+    display: inline-block;
+    // height: 60px;
+    padding-left: 15px;
+    padding-top:0px;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 20px;
+    z-index: 12;
+    float: left;
+
+}
+
+.b-bun--bottom,
+.b-bun--mid,
+.b-bun--top {
+    height: 2px;
+    width: 25px
+}
+
+
+.b-bun {
+    background: #fff;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+.b-brand,
+.b-bun {
+    position: relative;
+    -webkit-transition: all .4s ease
+}
+
+.b-bun--top {
+    top: 0;
+    width: 25px;
+}
+
+.b-bun--mid {
+    top: 8px;
+    width: 25px;
+}
+
+.b-bun--bottom {
+    top: 16px;
+    width: 25px;
+}
+
+.b-brand {
+    color: #fff;
+    // top: -41.43px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: 13;
+    float: left;
+    width: 76%;
+    text-align: center;
+    font-size: 30px;
+}
+.b-brand-img{
+	float: right;
+}
+.b-brand-a{
+    margin-left: 70px;
+    color: #fff;
+    font-family: "Radjhani Bold";
+    font-size: 22px;
+    text-decoration: none;
+    display: none;
+}
+
+.b-container {
+    height: 30px;
+    // left: 10px;
+    position: absolute;
+    top: 20px;
+    display: block;
+    vertical-align: middle;
+    width: 98% !important;
+}
+
+.b-container:hover:not(.open) .bun-bottom,
+.b-container:hover:not(.open) .bun-mid,
+.b-container:hover:not(.open) .bun-top {
+    background: #2196f3;
+}
+
+.b-container.open .b-bun--top {
+    background: #000;
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.b-container.open .b-bun--mid {
+    opacity: 0
+}
+
+.b-container.open .b-bun--bottom {
+    background: #000;
+    top: 5px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.b-container.open .b-brand {
+    color: #000;
+}
+@media screen and (min-width: 350px) and (max-width: 440px) {
+    .b-container {
+    height: 30px;
+    // left: 10px;
+    position: absolute;
+    top: 20px;
+    display: block;
+    vertical-align: middle;
+    width: 100% !important;
+}
+.b-brand {
+    width: 80%;
+    text-align: center;
+}
+}
+@media screen and (min-width: 441px) and (max-width: 767px) {
+    .b-container {
+    height: 30px;
+    // left: 10px;
+    position: absolute;
+    top: 20px;
+    display: block;
+    vertical-align: middle;
+    width: 100% !important;
+}
+.b-menu{
+        margin-right: 20%;
+}
+.b-brand {
+    width: 50%;
+    text-align: center;
+}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+.b-menu{
+        margin-right: 20%;
+}
+.b-brand {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.b-brand-a{
+    display: block;
+    width: 50px;
+    float: left;
+    margin-left: 12%;
+
+}
+
+.open:after {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 420px;
+}
+}
+@media screen and (min-width: 961px) and (max-width:1024px) {
+.b-menu{
+        margin-right: 0%;
+}
+.b-container {
+    height: 30px;
+    // left: 10px;
+    position: absolute;
+    top: 20px;
+    display: block;
+    vertical-align: middle;
+    width: 90% !important;
+}
+.b-brand {
+    width: 85%;
+    text-align: center;
+    float: left;
+}
+.b-brand-a{
+    display: block;
+    width: 40px;
+    float: left;
+    margin-left: 0%;
+}
+.b-brand-img{}
+
+.open:after {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 420px;
+}
+}
+@media screen and (min-width: 1025px) and (max-width:2500px) {
+.b-menu{
+        margin-right: 0%;
+}
+.b-container {
+    height: 30px;
+    // left: 10px;
+    position: absolute;
+    top: 20px;
+    display: block;
+    vertical-align: middle;
+    width: 73% !important;
+}
+.b-brand {
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.b-brand-a{
+    display: block;
+    width: 40px;
+    float: left;
+    margin-left: 0%;
+    margin-top: 5px;
+}
+.b-brand-img{}
+
+.open:after {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 420px;
+}
+}

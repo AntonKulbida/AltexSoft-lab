@@ -1,0 +1,92 @@
+/* Dots */
+.slick-dotted.slick-slider
+{
+    // margin-bottom: 30px;
+}
+
+.slick-dots2 
+{
+    position: absolute;
+    // top: 25px;
+
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+    bottom: 10px;
+	
+}
+.slick-dots2 li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots2 li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+	border: 1px solid white;
+    border-radius: 50%;
+    outline: none;
+	content: none;
+    background: white;
+}
+.slick-dots2 li button:hover,
+.slick-dots2 li button:focus
+{
+    outline: none;
+	
+}
+.slick-dots2 li button:hover:before,
+.slick-dots2 li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots2 li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+
+    content: '•';
+    text-align: center;
+    border: 1px solid #221f1f;
+    border-radius: 50%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots2 li.slick-active button:before
+{
+	border-radius: 50%; 
+	background: #221f1f;
+}

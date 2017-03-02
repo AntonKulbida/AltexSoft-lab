@@ -1,0 +1,5 @@
+c:\users\сергей\documents\visual studio 2012\Projects\Task4_4\Task4_4\bin\Debug\Task4_4.exe.config
+c:\users\сергей\documents\visual studio 2012\Projects\Task4_4\Task4_4\bin\Debug\Task4_4.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task4_4\Task4_4\bin\Debug\Task4_4.pdb
+c:\users\сергей\documents\visual studio 2012\Projects\Task4_4\Task4_4\obj\Debug\Task4_4.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task4_4\Task4_4\obj\Debug\Task4_4.pdb

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='personApp'>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>toDoList</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="js/lib/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="./js/controllers/personController.js"></script>
+</head>
+
+<body ng-controller="personController as person">
+
+    <form class="main-form" novalidate name="personForm" >
+        <div class="form-group">
+            <label>Enter your Name:</label>
+            <input type="text" required ng-model="person.name" name="name">
+            <div ng-show="personForm.$submitted && personForm.name.$touched">
+                <div class="show" ng-show="personForm.name.$error.required">You forgot to enter your 'NAME'.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter your Surname:</label>
+            <input type="text" required ng-model="person.surname" name="surname">
+            <div ng-show="personForm.$submitted && personForm.surname.$touched">
+                <div class="show" ng-show="personForm.surname.$error.required">You forgot to enter your 'SURNAME'.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter your Age:</label>
+            <input type="text" required ng-model="person.age" name="age">
+            <div ng-show="personForm.$submitted && personForm.age.$touched">
+                <div class="show" ng-show="personForm.age.$error.required">You forgot to enter your 'AGE'.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter your email:</label>
+            <input type="email" required ng-model="person.email" name="email">
+            <div ng-show="personForm.$submitted && personForm.email.$touched">
+                <div class="show" ng-show="personForm.email.$error.required">You forgot to enter your 'EMAIL'.</div>
+                <div class="show" ng-show="personForm.email.$error.email">Email is wrong.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter your phone number:</label>
+            <input type="text" ng-model="person.phone">
+        </div>
+
+            <label>Gender:</label>
+            Male  <input type="radio" value="male"   name="person.gender" ng-model="person.gender">
+            Female<input type="radio" value="female" name="person.gender" ng-model="person.gender"><br>
+
+        <button class="create" ng-click="createPerson(person)">Go</button>
+    </form>
+
+    <select ng-model="activeFilter" class="filter">
+        <option value="true">Active</option>
+        <option value="false">Inactive</option>
+        <option value="" selected="selected">All</option>
+    </select>
+
+    <ul class="persons-list">
+        <li class="person-list" ng-repeat="person in persons | filter:{active: activeFilter}">
+            <strong>Name </strong> {{person.name}}
+            <strong>Surname </strong> {{person.surname}}<br>
+            <strong>Age </strong> {{person.age}}<br>
+            <strong>Email</strong><a href="">{{person.email}} </a><br>
+            <strong>Phone </strong> {{person.phone}}<br>
+            <strong>Gender </strong> {{person.gender}}<br>
+            <strong>Is Active </strong> {{person.active}}<br>
+            <button ng-click="changeActivity(person)"> {{person.active ? 'Make inactive' : 'Make active'}}</button>
+            <button ng-click="deletePerson(person)">Delete person</button>
+        </li>
+    </ul>
+</body>
+
+</html>

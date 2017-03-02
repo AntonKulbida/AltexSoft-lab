@@ -1,0 +1,6 @@
+c:\users\сергей\documents\visual studio 2012\Projects\Task_5\Task_5\bin\Debug\Task_5.exe.config
+c:\users\сергей\documents\visual studio 2012\Projects\Task_5\Task_5\bin\Debug\Task_5.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task_5\Task_5\bin\Debug\Task_5.pdb
+c:\users\сергей\documents\visual studio 2012\Projects\Task_5\Task_5\obj\Debug\Task_5.csprojResolveAssemblyReference.cache
+c:\users\сергей\documents\visual studio 2012\Projects\Task_5\Task_5\obj\Debug\Task_5.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task_5\Task_5\obj\Debug\Task_5.pdb

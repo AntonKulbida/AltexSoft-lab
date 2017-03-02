@@ -1,0 +1,10 @@
+@media (min-width: 48em) {
+  .col-third { 
+  	flex: 0 0 33.3333334%;
+  	 // padding:10px 5px;
+  	}
+  .col-half { 
+  	flex: 0 0 50%;
+  	 // margin: 5px;
+  	}
+}

@@ -1,0 +1,183 @@
+@import url(http://allfont.ru/allfont.css?fonts=roboto-bold);
+
+        /* Базовый контейнер табов */
+        .tabs {
+            width: 100%;
+            max-width: 1366px;
+            padding: 0px;
+            margin: 0 auto;
+            text-align: center;
+            height: auto;
+            margin-top: 50px;
+        }
+        /* Стили секций с содержанием */
+        
+        .tabs > section {
+            display: none;
+            // padding: 15px;
+            background: #fff;
+            // border: 1px solid #ddd;
+        }
+        
+        .tabs > section > p {
+            // margin: 0 0 5px;
+            // line-height: 1.5;
+            // color: #383838;
+            /* прикрутим анимацию */
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+            border: 1px solid #000;
+        }
+
+        .tabs ul {
+            width: 100%;
+            max-width: 1366px;
+            margin: 0 auto;
+            padding-top: 20px;
+             }
+
+        .tabs ul li{
+            // float: left;
+            display: inline-block;
+            width: 33.2%;
+            // max-width: 448.5px;
+            border-top: 1px solid #f2776b;
+            border-right: 1px solid #f2776b;
+            height: 150px;
+            vertical-align: top;
+            background-color: #f65848;
+            transition: .2s;
+             }
+
+             .tabs ul li:hover{
+                // -webkit-transform: translateY(-20px);
+                // -ms-transform: translateY(-20px);
+                // transform: translateY(-20px);
+             }
+
+            .tabs ul li img{
+                width: 100%;
+                height: 150px;
+                // -webkit-filter: blur(3px);
+                // filter: blur(3px);
+             }
+
+             .tabs ul li img:hover{
+                // -webkit-filter: blur(0px);
+                //         filter: blur(0px);
+                cursor: pointer;
+             }
+
+
+
+        /* Описываем анимацию свойства opacity */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Прячем чекбоксы */
+        
+        .tabs > input {
+            display: none;
+            position: absolute;
+        }
+        /* Стили переключателей вкладок (табов) */
+        
+        .tabs > label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 10px 10px;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Roboto Thin',sans-serif;
+        }
+        /* Изменения стиля переключателей вкладок при наведении */
+        
+        .tabs > label:hover {
+            color: #888;
+            cursor: pointer;
+        }
+        /* Стили для активной вкладки */
+        
+        .tabs > input:checked + label {
+            color: #555;
+            border-bottom: 1px solid #e84c3d;
+            background: #fff;
+            font-family: 'Roboto Bold',sans-serif;
+
+        }
+        /* Активация секций с помощью псевдокласса :checked */
+
+        #tab1:checked ~ #content-tab1,
+        #tab2:checked ~ #content-tab2,
+        #tab3:checked ~ #content-tab3,
+        #tab4:checked ~ #content-tab4,
+        #tab5:checked ~ #content-tab5 {
+            display: block;
+        }
+]/* Убираем текст с переключателей 
+* и оставляем иконки на малых экранах
+*/
+        
+        @media screen and (max-width: 680px) {
+            .tabs > label {
+                font-size: 0;
+            }
+            .tabs > label:before {
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+        /* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+        
+        @media screen and (max-width: 400px) {
+            .tabs > label {
+                padding: 15px;
+            }
+        }
+@media screen and (min-width: 523px) and (max-width: 732px) {
+
+        .tabs ul li{
+            width: 25.2%;
+            height: 110px;
+             }
+
+            .tabs ul li img{
+                width: 100%;
+                height: 110px;
+             }
+         }
+
+@media screen and (min-width: 320px) and (max-width: 523px) {
+
+        .tabs ul li{
+            width: 25.2%;
+            height: 70px;
+             }
+
+            .tabs ul li img{
+                width: 100%;
+                height: 70px;
+             }
+
+         }

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="charset-type" charset="UTF-8">
+    <meta name="author" content="Kulbida Anton" />
+    <meta name="esource-type" content="Document" />
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="description" content="BOOSTFOLIA" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <title>BOOSTFOLIA</title>
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- ..................left-menu................................ -->
+    <link rel="stylesheet" href="css/pushy.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- ...............................tabs............................... -->
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" type="text/css" href="js/lightbox-css3/css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="lightbox-css3/css/demo-page.css"/>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+    <link rel="stylesheet" type="text/css" href="js/map/css/style.css" />
+    <script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+    <!-- ..................................marker.................................. -->
+    <link rel="stylesheet" href="add_marker/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="add_marker/js/map.js"></script>
+    <!-- ....................................slick-slider.................................... -->
+    <link rel="stylesheet" href="js/slick-slider/css/slick-style.css">
+    <link rel="stylesheet" href="js/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-slider/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/slfilm/css/slick-style.css">
+    <link rel="stylesheet" href="js/slfilm/slick/slick.css">
+    <link rel="stylesheet" href="js/slfilm/slick/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- anchor -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#menu").on("click", "a", function(event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({
+                scrollTop: top
+            }, 2300);
+        });
+    });
+    </script>
+    <script>
+        $(document).ready(function(){
+    $("#anchor2").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 2000);
+    });
+});
+    </script>
+</head>
+
+<body>
+    <div class="main-header">
+        <div class="top-block" id="yak1">
+        <header>
+            <ul style="margin: 20px;">
+                <li>
+                    <a href="#"><img src="img/logo.png" alt="Logotype"></a>
+                </li>
+                <li>
+                    <h1>BOOSTFOLIA</h1></li>
+            </ul>
+        </header>
+            <!-- Pushy Menu -->
+            <nav class="pushy pushy-right">
+                <ul>
+                    <li class="pushy-submenu">
+                        <a href="#">About Us</a>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Item 1</a></li>
+                            <li class="pushy-link"><a href="#">Item 2</a></li>
+                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <a href="#">Boostfolia</a>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Item 1</a></li>
+                            <li class="pushy-link"><a href="#">Item 2</a></li>
+                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <a href="#">Info</a>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Item 1</a></li>
+                            <li class="pushy-link"><a href="#">Item 2</a></li>
+                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <a href="#">All rights recerved</a>
+                        <ul>
+                            <li class="pushy-link"><a href="#">Item 1</a></li>
+                            <li class="pushy-link"><a href="#">Item 2</a></li>
+                            <li class="pushy-link"><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Site Overlay -->
+            <!-- <div class="site-overlay"></div> -->
+            <!-- Your Content -->
+            <section>
+            <div class="container">
+  <div class="menu-btn-wrapper cf">
+    <button class="menu-btn">&#9776;</button>
+  </div>
+            <!-- Pushy JS -->
+            <script src="js/pushy.min.js"></script>
+            <p style="clear: both;"></p>
+        </div>
+    </section>
+    </div>
+    <section>
+    <div class="next-creative-block" id="anchor2">
+        <div class="creative-be-creative">
+            <h1>WE THINK CREATIVE BE CREATIVE</h1>
+            <h4>LIKE TO DO CREATIVE WORKS</h4>
+            <a href="#ex1"><img src="img/scrol.png" alt="Some-image"></a>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="about-us-block">
+        <div class="our-work">
+            <h1>ABOUT US</h1>
+            <p></p>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+            <ul>
+                <li>
+                    <a href="#"><img src="img/icon1.png" alt="Design">
+                        <h3>CREATIVE DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . . .</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img style="width: 48px;
+						height: 44px;padding: 5px 0;" src="img/icon2.png" alt="Portfolio">
+                        <h3>UNIQU PORTFOLIO</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . . .</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img style="width: 60px;
+						height: 27px; padding: 10px 0;" src="img/icon3.png" alt="Updates">
+                        <h3>INFINITE UPDATES</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . . .</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="main-video-block">
+        <div class="video-block">
+            <div class="text-pre-video">
+                <h2>WATCH BEHIND THE SCENE</h2>
+                <p>Lorem ipsum dolo the lorem r sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                <div class="button">
+                    <h3>Play now</h3></div>
+            </div>
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/58226214?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" poster="img/jane.jpg " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <p style="clear: both;"></p>
+        </div>
+    </div>
+</section>
+
+    <div class="our-works-block">
+        <div class="our-work">
+            <h1>OUR WORK</h1>
+            <p></p>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+        </div>
+        <div class="container">
+            <div class="tabs">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1" title="ALL PROJECTS">ALL PROJECTS</label>
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2" title="PHOTOGRAPHY">PHOTOGRAPHY</label>
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3" title="WEB DESIGN">WEB DESIGN</label>
+                <input id="tab4" type="radio" name="tabs">
+                <label for="tab4" title="BRANDING">BRANDING</label>
+                <input id="tab5" type="radio" name="tabs">
+                <label for="tab5" title="MOBILE APP">MOBILE APP</label>
+                <section id="content-tab1">
+                    <ul>
+                        <li><img src="img/photo-gallery/sapogi.jpg" alt=""></li><li><img src="img/photo-gallery/day.jpg" alt=""></li><li><img src="img/photo-gallery/vikings.jpg" alt=""></li><li><img src="img/photo-gallery/djangojpg.jpg" alt=""></li><li><img src="img/photo-gallery/blade.jpg" alt=""></li><li><img src="img/photo-gallery/simps.jpg" alt=""></li><li><img src="img/photo-gallery/boxing.jpg" alt=""></li><li><img src="img/photo-gallery/chancellor.jpg" alt=""></li><li><img src="img/photo-gallery/walk.jpg" alt=""></li></ul>
+                </section>
+                <section id="content-tab2">
+                    <ul>
+                       <li><img src="img/photo-gallery/day.jpg" alt=""></li><li><img src="img/photo-gallery/sapogi.jpg" alt=""></li><li><img src="img/photo-gallery/djangojpg.jpg" alt=""></li><li><img src="img/photo-gallery/blade.jpg" alt=""></li><li><img src="img/photo-gallery/simps.jpg" alt=""></li><li><img src="img/photo-gallery/vikings.jpg" alt=""></li><li><img src="img/photo-gallery/boxing.jpg" alt=""></li><li><img src="img/photo-gallery/walk.jpg" alt=""></li><li><img src="img/photo-gallery/chancellor.jpg" alt=""></li></ul>
+                    </ul>
+                </section>
+                <section id="content-tab3">
+                    <ul>
+                       <li><img src="img/photo-gallery/sapogi.jpg" alt=""></li><li><img src="img/photo-gallery/day.jpg" alt=""></li><li><img src="img/photo-gallery/vikings.jpg" alt=""></li><li><img src="img/photo-gallery/djangojpg.jpg" alt=""></li><li><img src="img/photo-gallery/blade.jpg" alt=""></li><li><img src="img/photo-gallery/simps.jpg" alt=""></li><li><img src="img/photo-gallery/boxing.jpg" alt=""></li><li><img src="img/photo-gallery/chancellor.jpg" alt=""></li><li><img src="img/photo-gallery/walk.jpg" alt=""></li></ul>
+                    </ul>
+                </section>
+                <section id="content-tab4">
+                    <ul>
+                        <li><img src="img/photo-gallery/walk.jpg" alt=""></li><li><img src="img/photo-gallery/sapogi.jpg" alt=""></li><li><img src="img/photo-gallery/day.jpg" alt=""></li><li><img src="img/photo-gallery/simps.jpg" alt=""></li><li><img src="img/photo-gallery/vikings.jpg" alt=""></li><li><img src="img/photo-gallery/djangojpg.jpg" alt=""></li><li><img src="img/photo-gallery/boxing.jpg" alt=""></li><li><img src="img/photo-gallery/chancellor.jpg" alt=""></li><li><img src="img/photo-gallery/blade.jpg" alt=""></li></ul>
+                    </ul>
+                </section>
+                <section id="content-tab5">
+                    <ul>
+                        <li><img src="img/photo-gallery/sapogi.jpg" alt=""></li><li><img src="img/photo-gallery/day.jpg" alt=""></li><li><img src="img/photo-gallery/vikings.jpg" alt=""></li><li><img src="img/photo-gallery/djangojpg.jpg" alt=""></li><li><img src="img/photo-gallery/blade.jpg" alt=""></li><li><img src="img/photo-gallery/simps.jpg" alt=""></li><li><img src="img/photo-gallery/boxing.jpg" alt=""></li><li><img src="img/photo-gallery/chancellor.jpg" alt=""></li><li><img src="img/photo-gallery/walk.jpg" alt=""></li></ul>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="first-slider">
+        <div class="sl">
+            <div class="sl__slide">
+                <img src="img/img-slider1.png" alt="" class="sl__img" images="">
+            </div>
+            <div class="sl__slide">
+                <img src="img/img-slider2.png" alt="" class="sl__img" images="">
+            </div>
+            <div class="sl__slide">
+                <img src="img/img-slider3.png" alt="" class="sl__img" images="">
+            </div>
+            <div class="sl__slide">
+                <img src="img/img-slider1.png" alt="" class="sl__img" images="">
+            </div>
+        </div>
+        <!-- Подключаем скрипты -->
+        <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/slick-slider/slick/slick.js"></script>
+        <script src="js/slick-slider/js/js.js"></script>
+    </div>
+    <div class="our-works-block">
+        <div class="our-work">
+            <h1>WHO WE ARE</h1>
+            <p></p>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+            <div class="person">
+                <div class="sl6">
+                    <div class="sl6__slide">
+                        <img src="img/jane.JPG" alt="" class="sl__img" images="">
+                        <div class="sl6__text">
+                            <h3 class="sl6__zag">JANE SMITH</h3>
+                            <p>DESIGNER</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl6__slide">
+                        <img src="img/jane.JPG" alt="" class="sl__img" images="">
+                        <div class="sl6__text">
+                            <h3 class="sl6__zag">JANE SMITH</h3>
+                            <p>DESIGNER</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl6__slide">
+                        <img src="img/jane.JPG" alt="" class="sl__img" images="">
+                        <div class="sl6__text">
+                            <h3 class="sl6__zag">JANE SMITH</h3>
+                            <p>DESIGNER</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Конец кода -->
+            <!-- Подключаем скрипты -->
+            <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+            <script src="js/slfilm/slick/slick.js"></script>
+            <script src="js/slfilm/js/js.js"></script>
+            <div class="his-skill">
+                <h4>MY SKILLS</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium similique ad maxime architecto deleniti a quisquam perferendis cumque voluptatum, ipsam labore distinctio dolore omnis delectus!</p>
+                <ul>
+                    <li style="margin-left: 40px;">
+                        <h5>PHOTOSHOP</h5><img src="img/ph.png" alt="progress">
+                        <h6>88%</h6></li>
+                    <li style="margin-left: 40px;">
+                        <h5>ILLUSTRATOR</h5><img src="img/illustrator.png" alt="progress">
+                        <h6>92%</h6></li>
+                    <li style="margin-left: 40px;">
+                        <h5>SKETCH</h5><img src="img/sketch.png" alt="progress">
+                        <h6>90%</h6></li>
+                    <li style="margin-left: 40px;">
+                        <h5>AFTER EFFECTS</h5><img src="img/ae.png" alt="progress">
+                        <h6>98%</h6></li>
+                </ul>
+            </div>
+            <p style="clear: both; border-bottom: none;"></p>
+        </div>
+    </div>
+    </div>
+
+    <section>
+    <div class="some-features-block">
+        <div class="some-features">
+            <h1>SOME FEATURES</h1>
+            <p></p>
+            <ul>
+                <li>
+                    <a href="#"><img src="img/pc.png" alt="Shortcodes sty" style="width: 52px;">
+                        <p style="padding-top: 20px;">Shortcodes</p>
+                        <h4>46</h4></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/gear.png" alt="IntegratedPlugins sty" style="width: 56px;">
+                        <p style="padding-top: 10px;">Integrated Plugins</p>
+                        <h4>128</h4></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/bag.png" alt="Creative Prod sty" style="width: 48px;">
+                        <p style="padding-top: 16px;">Creative Products</p>
+                        <h4>450</h4></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/gold.png" alt="Clients sty" style="width: 36px;">
+                        <p style="padding-top: 10px;">Client Worldwide</p>
+                        <h4>100+</h4></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="blog-post-bloc">
+        <div class="blog-post">
+            <h1>BLOG POSTS</h1>
+            <p></p>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+            <ul>
+                <li>
+                    <div class="thumb">
+                        <a href="#img1">
+                            <img src="js/lightbox-css3/img/img2.jpg">
+                        </a>
+                    </div>
+                    <a href="#close" class="lightbox" id="img1">
+                        <img src="js/lightbox-css3/img/img2.jpg">
+                    </a>
+                    <h2>Creat Creative & Clean</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h6><i class="fa fa-clock-o" aria-hidden="true">25 Jan 2015</i></h6>
+                    <h6 style="text-align: right;"><i class="fa fa-thumbs-o-up" aria-hidden="true">25</i> <i class="fa fa-cloud" aria-hidden="true">11</i></h6></li>
+                <li>
+                    <div class="thumb">
+                        <a href="#img2">
+                            <img src="js/lightbox-css3/img/img4.jpg">
+                        </a>
+                    </div>
+                    <a href="#close" class="lightbox" id="img2">
+                        <img src="js/lightbox-css3/img/img4.jpg">
+                    </a>
+                    <h2>Make A Sleek Break</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h6><i class="fa fa-clock-o" aria-hidden="true">25 Jan 2015</i></h6>
+                    <h6 style="text-align: right;"><i class="fa fa-thumbs-o-up" aria-hidden="true">25</i> <i class="fa fa-cloud" aria-hidden="true">11</i></h6></li>
+                <li>
+                    <div class="thumb">
+                        <a href="#img3">
+                            <img src="js/lightbox-css3/img/img6.jpg">
+                        </a>
+                    </div>
+                    <a href="#close" class="lightbox" id="img3">
+                        <img src="js/lightbox-css3/img/img6.jpg">
+                    </a>
+                    <h2>Creative Manipulations</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h6><i class="fa fa-clock-o" aria-hidden="true">25 Jan 2015</i></h6>
+                    <h6 style="text-align: right;"><i class="fa fa-thumbs-o-up" aria-hidden="true">25</i> <i class="fa fa-cloud" aria-hidden="true">11</i></h6></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="choose-plan-block">
+        <div class="choose-plan">
+            <h1>CHOOSE PLAN</h1>
+            <p></p>
+            <ul>
+                <li>
+                    <h3>BASIC</h3>
+                    <h2>Free</h2>
+                    <p style="padding-top: 40px;"><b>20 </b> Pages</p>
+                    <p><b>2 </b> GB Storage</p>
+                    <p><b> 150</b> Members</p>
+                    <p><b>2 </b> Contributors</p>
+                    <p>
+                        <button>PURCHASE</button>
+                    </p>
+                </li><li>
+                    <h3>STANDART</h3>
+                    <h2>$24.00</h2>
+                    <p style="padding-top: 40px;"><b>25 </b> Pages</p>
+                    <p><b>10 </b> GB Storage</p>
+                    <p><b>300 </b> Members</p>
+                    <p><b>5 </b> Contributors</p>
+                    <p>
+                        <button>PURCHASE</button>
+                    </p>
+                </li><li>
+                    <h3>PREMIUM</h3>
+                    <h2>$40.00</h2>
+                    <p style="padding-top: 40px;"><b>30 </b> Pages</p>
+                    <p><b>20 </b> GB Storage</p>
+                    <p><b>500 </b> Members</p>
+                    <p><b>10 </b> Contributors</p>
+                    <p>
+                        <button>PURCHASE</button>
+                    </p>
+                </li><li>
+                    <h3>PROFESSIONAL</h3>
+                    <h2>$75.00</h2>
+                    <p style="padding-top: 40px;"><b>40 </b>Pages</p>
+                    <p><b>40 </b> GB Storage</p>
+                    <p><b>1000 </b> Members</p>
+                    <p><b>20 </b> Contributors</p>
+                    <p>
+                        <button>PURCHASE</button>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="get-in-touch-block">
+        <div class="get-in-touch">
+            <h1>GET IN TOUCH</h1>
+            <p></p>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+            <form method="post" action="#">
+                <div class="name">
+                    <label for="text">
+                        <h5>NAME *</h5>
+                        <br>
+                        <input type="text" name="name" placeholder="">
+                    </label>
+                </div>
+                <div class="mail">
+                    <label for="email-field">
+                        <h5>MAIL *</h5>
+                        <br>
+                        <input type="email" name="email" id="email-field" placeholder="">
+                    </label>
+                </div>
+                <br>
+                <div class="text-area">
+                    <label for="area">
+                        <h5>MASSAGE *</h5>
+                        <textarea name="text" id="area" cols="" rows="" placeholder=""></textarea>
+                    </label>
+                </div>
+                <br>
+                <div class="submit">
+                    <label>
+                        <input type="submit" value="SEND MESSAGE" name="enter">
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="map-block">
+        <section class="ac-container">
+            <div>
+                <input id="ac-1" name="accordion-1" type="checkbox" />
+                <label for="ac-1">LOCATE ON MAP</label>
+                <article class="ac-small">
+                    <div id="map" class="map"></div>
+                </article>
+            </div>
+        </section>
+    </div>
+    </section>
+
+    <div class="footer" id="menu">
+        <footer>
+            <a href="#yak1"><img src="img/logo.png" alt="Logotype"></a>
+            <h1 id="ex1">BOOSTFOLIA</h1>
+            <h6>MADE WHITH LOVE BY CreATIVEPRODUCT</h6>
+            <ul>
+                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

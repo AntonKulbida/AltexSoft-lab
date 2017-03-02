@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/site.css" rel="stylesheet" />
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+
+    <title>Add</title>
+</head>
+<body>
+<asp:CompareValidator ID="NotZeroValidator" 
+                      runat="server"
+                      ValueToCompare="0"
+                      Operator="Equal"
+                      Type="int"
+                      ErrorMessage="CompareValidator">
+
+    </asp:CompareValidator>
+<div>
+    <span class="badge">
+            @if (ViewBag.First == null)
+            {
+                @:null
+            }
+            else
+            {
+                @ViewBag.First
+            }
+        </span> -
+    <span class="badge">
+            @if (ViewBag.Second == null)
+            {
+                @:null
+            }
+            else
+            {
+                @ViewBag.Second
+            }
+        </span> =
+    <span class="badge">
+            @if (ViewBag.Result == null)
+            {
+                @:null
+            }
+            else
+            {
+                @ViewBag.Result
+            }
+        </span>
+</div>
+</body>
+</html>

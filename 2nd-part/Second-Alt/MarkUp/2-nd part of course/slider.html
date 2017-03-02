@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<style>
+.album{
+ position: relative;
+ width: 400px;
+ height: 250px;
+ overflow: hidden;
+ }
+ .album ul, .album li {
+ list-style-type: none;
+ padding: 0;
+ margin: 0; 
+ float: left;
+ width: 800px;
+ height: 350px;
+ }
+ .album ul { 
+ width: 3200px; 
+}
+ .album .nav {
+ position: absolute;
+ bottom: 16px; 
+ left: 45%;
+ }
+ .album .nav span { 
+ display: block;
+ margin-right:13px;
+ background: #fff;
+ border-radius: 9px;
+ height: 16px;
+ width: 16px;
+ height: 16px;
+ overflow: hidden;
+ float: left;
+ box-shadow: 1px 2px 3px #001;
+ }
+ .album .nav span.on {
+ background: #98FB98;
+ }
+</style>
+<script>
+$(document).ready(function() {
+ $(".album").each(function () { 
+  var param = $(this);
+  $(param ).append("<div class='nav'></div>"); 
+  $(param ).find("li").each(function () {
+   $(param ).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); 
+   $(this).addClass("album"+$(this).index());
+  });
+  $(param ).find("span").first().addClass("on"); 
+ });
+});
+function sliderJS (param, slide) { 
+var b_ul = $( slide).find("ul"); 
+ var b_li = $( slide).find("li.album"+param); 
+var step = $(b_li).width(); 
+ $(b_ul).animate({marginLeft: "-"+step*param}, 400); 
+}
+$(document).on("click", ".album .nav span", function() { 
+ var s = $(this).closest(".album"); 
+ $(s).find("span").removeClass("on"); 
+ $(this).addClass("on"); 
+ var param = $(this).attr("rel"); 
+ sliderJS(param, s); 
+ return false;
+});
+</script>
+<body>
+  <div class="album">
+	<ul>
+		<li><img src="http://jtour.by/uploads/posts/2014-10/1414766992_25.jpg" alt=""></li>
+		<li><img src="http://puteshestvie-about.ru/wp-content/uploads/2011/04/Egipet-cairo.jpg" alt=""></li>
+		<li><img src="http://img6.qwrt.ru/img6/2015/07/22/%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F-%D0%BE%D1%82%D0%B4%D1%8B%D1%85-%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC-%D0%B5%D0%B4%D0%B0-09160.jpg" alt=""></li>
+		<li><img src="http://v-thailand.com/wp-content/uploads/2015/11/Puteshestviya-v-odinochku-820x344.jpg" alt=""></li>
+	</ul>
+</div>
+</body>
+</html>

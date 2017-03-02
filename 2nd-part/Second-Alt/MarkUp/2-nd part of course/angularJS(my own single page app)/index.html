@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='personApp'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Persons App</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="Site.css" rel="stylesheet">
+        <script src="./js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-ui-router.min.js"></script>
+        <script src="app.js"></script>
+        <script src="./js/controllers/personController.js"></script>
+        <script src="./js/controllers/weatherController.js"></script>
+        <script src="./js/ui-router.js"></script>
+    
+      <script src="js/calendar.js" type="text/javascript"></script>
+
+<!-- ==================Clock================================= -->
+    <link rel="stylesheet" href="js/main.css">
+    <script src="js/clock.js"></script>
+
+<!-- <script src="./js/map.js"></script> -->
+    </head>
+    <body ng-controller="personController as person">
+<div class="container" style="box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 0.75);">
+    <div class="row">
+    <h1 class="text-center text-danger">This is my first single page application!</h1>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center text-primary">
+    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, deserunt, optio et, quam minus necessitatibus numquam praesentium possimus obcaecati repellendus ut voluptatum, laboriosam neque fuga velit. Facere accusamus, sed esse, reiciendis enim omnis vero magnam beatae tenetur et! Doloremque maxime sit delectus ipsa. Corrupti alias sapiente ab, odio reprehenderit beatae!</p>
+        </div>
+    </div>
+        <ul class="list-unstyled list-inline text-center">
+            <li><a ui-sref="home" class="btn btn-primary">Registration</a> </li>
+            <li><a ui-sref="list" class="btn btn-success">People list</a></li>
+            <li><a ui-sref="about" class="btn btn-danger">Local time</a></li>
+            <li><a ui-sref="work" class="btn btn-info">About author</a></li>
+            
+        </ul>
+        <div ui-view></div>
+    </div>
+</div>
+    </body>
+</html>

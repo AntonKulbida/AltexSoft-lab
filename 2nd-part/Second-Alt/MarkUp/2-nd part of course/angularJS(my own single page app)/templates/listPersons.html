@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+    <select ng-model="activeFilter" class="filter">
+        <option value="true">Active</option>
+        <option value="false">Inactive</option>
+        <option value="" selected="selected">All</option>
+    </select>
+
+    <ul class="persons-list ">
+        <li class="person-list" ng-repeat="person in persons | filter:{active: activeFilter}">
+            <strong>Name </strong> {{person.name}}
+            <strong>Surname </strong> {{person.surname}}<br>
+            <strong>Age </strong> {{person.age}}<br>
+            <strong>Email</strong><a href="">{{person.email}} </a><br>
+            <strong>Phone </strong> {{person.phone}}<br>
+            <strong>Gender </strong> {{person.gender}}<br>
+            <strong>Is Active </strong> {{person.active}}<br>
+            <button ng-click="changeActivity(person)"> {{person.active ? 'Make inactive' : 'Make active'}}</button>
+            <button ng-click="deletePerson(person)">Delete person</button>
+        </li>
+    </ul>
+<div ui-view></div>
+        </div>
+    </div>
+</div>

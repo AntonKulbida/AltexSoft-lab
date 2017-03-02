@@ -1,0 +1,6 @@
+c:\users\сергей\documents\visual studio 2012\Projects\linq\linq\bin\Debug\linq.exe.config
+c:\users\сергей\documents\visual studio 2012\Projects\linq\linq\bin\Debug\linq.exe
+c:\users\сергей\documents\visual studio 2012\Projects\linq\linq\bin\Debug\linq.pdb
+c:\users\сергей\documents\visual studio 2012\Projects\linq\linq\obj\Debug\linq.csprojResolveAssemblyReference.cache
+c:\users\сергей\documents\visual studio 2012\Projects\linq\linq\obj\Debug\linq.exe
+c:\users\сергей\documents\visual studio 2012\Projects\linq\linq\obj\Debug\linq.pdb

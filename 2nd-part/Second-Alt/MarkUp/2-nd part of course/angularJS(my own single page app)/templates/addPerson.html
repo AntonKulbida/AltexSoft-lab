@@ -1,0 +1,58 @@
+<div class="contariner">
+    <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+<h4>Write some information:</h4>
+    <form class="main-form" novalidate name="personForm" >
+        <div class="form-group" >
+            <label>Enter your Name:</label>
+            <input type="text" required ng-model="person.name" name="name">
+            <div ng-show="personForm.$submitted && personForm.name.$touched">
+                <div class="show" ng-show="personForm.name.$error.required">You forgot to enter your 'NAME'.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter your Surname:</label>
+            <input type="text" required ng-model="person.surname" name="surname">
+            <div ng-show="personForm.$submitted && personForm.surname.$touched">
+                <div class="show" ng-show="personForm.surname.$error.required">You forgot to enter your 'SURNAME'.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter your Age:</label>
+            <input type="number" required ng-model="person.age" name="age">
+            <div ng-show="personForm.$submitted && personForm.age.$touched">
+                <div class="show" ng-show="personForm.age.$error.required">You forgot to enter your 'AGE'.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter your email:</label>
+            <input type="email" required ng-model="person.email" name="email">
+            <div ng-show="personForm.$submitted && personForm.email.$touched">
+                <div class="show" ng-show="personForm.email.$error.required">You forgot to enter your 'EMAIL'.</div>
+                <div class="show" ng-show="personForm.email.$error.email">Email is wrong.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter your phone number:</label>
+            <input type="tel" ng-model="person.phone">
+        </div>
+        <label>Gender:</label>
+  <label style="width: 70px;">
+    <input type="radio" name="person.gender"  value="male" ng-model="person.gender" checked>
+    Male
+  </label>
+
+  <label style="width: 70px;">
+    <input type="radio" name="person.gender"  value="female" ng-model="person.gender">
+    Female
+  </label>
+<br>
+<!--             <label>Gender:</label>
+            Male  <input type="radio" value="male"   name="person.gender" ng-model="person.gender">
+            Female<input type="radio" value="female" name="person.gender" ng-model="person.gender"><br> -->
+
+        <button class="create" ng-click="createPerson(person)">Go</button>
+    </form>
+    </div>
+    </div>
+</div>

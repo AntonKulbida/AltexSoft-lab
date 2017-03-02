@@ -1,0 +1,154 @@
+body {
+	background: silver;
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+.info img{
+  padding: 7px 7px 10px 20px;
+}
+.info p{
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 3px 3px 3px;
+}
+.info h4{
+  font-family: Helvetica, "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #097749;
+  padding: 2px 3px -1px 3px;
+}
+.main {
+  padding: 10px;
+
+}
+
+/* Стили для сладера */
+.sl{
+  background-color: #252525;
+  border-radius: 10px;
+  top: -45px;
+}
+.sl__img {
+  float: left;
+	// border: 5px solid #141b26;
+}
+
+.sl__slide {
+	margin: 15px 5px 15px 5px;
+	background: #fff;
+  border-radius: 5px;
+  box-shadow:inset 0 0 10px rgba(0,0,0,0.5);
+  // width: 180px !important;
+  // background-image: url(../img/gradient.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  transition: .5s;
+  outline: none;
+}
+.sl__slide:hover{
+  opacity: .9;
+  cursor: pointer;
+  transform: translateY(-10px);
+
+}
+
+.sl__text {
+  width: 80%;
+  font-family: Arial,"Helvetica", sans-serif;
+  padding: 10px 5px 3px 20px;
+}
+.sl__text ul{
+// padding: 5px 1px 3px 10px;
+}
+.sl__text ul li{
+  display: inline-block;
+}
+.sl__text h5 a{
+  color: #097749;
+  font-weight: 600;
+  font-size: 14px;
+}
+.sl__text p{
+  font-size: 12px;
+  color: #a4a4a4;
+}
+
+
+.sl__zag, .sl__desc {
+}
+
+/*Адаптивность картинок и видео*/
+img{
+  // max-width: 100%;
+  // height: 50px;
+  // background-size: contain;
+  // height: auto;
+}
+
+.vidres{
+  // height: 0;
+  // overflow: hidden;
+  // padding-bottom: 56.25%;
+  // position: relative;
+}
+
+.vidres iframe, .vidres embed, .vidres object{
+  // width: 100%;
+  // height: 100%;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+}
+
+/*Используется для центрирования контента*/
+.mid{
+  // max-width: 1350px; Укажите своё значение
+  // margin: 0 auto;
+}
+
+/*Колонки - задаём свои, если чего то не хватает
+  по умолчанию используется расстояние в 4% между колонками*/
+// .col25, .col33, .col50{
+  // float: left;
+  // margin: 0 4% 0 0;
+// }
+
+.col25{ /*4 в ряд*/
+  // width: 22%;
+}
+
+.col33{ /*3 в ряд*/
+  // width: 30.6666666%;
+}
+
+.col50{ /*2 в ряд*/
+  // width: 48%;
+}
+
+.col25:last-child,
+.col33:last-child,
+.col50:last-child{
+  // margin: 0;
+}
+
+/*Очистка обтекания*/
+.mid:before, .cf:before, .mid:after, .cf:after{
+  // content: " ";
+  // display: table;
+}
+.mid:after, .cf:after{
+  // clear: both;
+}
+
+
+
+/*Адаптивность*/
+
+// @media (min-width: 1200px) {
+// img { width:auto; }
+// .slick-slide img { width:100%; }

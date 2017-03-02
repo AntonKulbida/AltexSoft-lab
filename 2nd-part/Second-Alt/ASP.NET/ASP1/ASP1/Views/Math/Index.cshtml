@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Add", "Math", FormMethod.Get))
+        {
+            <input type="number" name="first"/>
+            <span>+</span>
+            <input type="number" name="second"/>
+            <input type="submit" value="Calculate"/>
+        }
+    </div>
+
+    <div>
+        @using (Html.BeginForm("Sub", "Math", FormMethod.Get))
+        {
+            <input type="number" name="first"/>
+            <span>-</span>
+            <input type="number" name="second"/>
+            <input type="submit" value="Calculate"/>
+        }
+    </div>
+
+    <div>
+        @using (Html.BeginForm("Mul", "Math", FormMethod.Get))
+        {
+            <input type="number" name="first"/>
+            <span>*</span>
+            <input type="number" name="second"/>
+            <input type="submit" value="Calculate"/>
+        }
+    </div>
+
+    <div>
+        @using (Html.BeginForm("Div", "Math", FormMethod.Get))
+        {
+            <input type="number" name="first" />
+            <span>/</span>
+            <input type="number" name="second" />
+            <input type="submit" value="Calculate" />
+        }
+    </div>
+</body>
+</html>

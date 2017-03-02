@@ -1,0 +1,6 @@
+c:\users\сергей\documents\visual studio 2012\Projects\catalog_diskov\catalog_diskov\bin\Debug\catalog_diskov.exe.config
+c:\users\сергей\documents\visual studio 2012\Projects\catalog_diskov\catalog_diskov\bin\Debug\catalog_diskov.exe
+c:\users\сергей\documents\visual studio 2012\Projects\catalog_diskov\catalog_diskov\bin\Debug\catalog_diskov.pdb
+c:\users\сергей\documents\visual studio 2012\Projects\catalog_diskov\catalog_diskov\obj\Debug\catalog_diskov.csprojResolveAssemblyReference.cache
+c:\users\сергей\documents\visual studio 2012\Projects\catalog_diskov\catalog_diskov\obj\Debug\catalog_diskov.exe
+c:\users\сергей\documents\visual studio 2012\Projects\catalog_diskov\catalog_diskov\obj\Debug\catalog_diskov.pdb

@@ -1,0 +1,35 @@
+.main-form {
+    border: 1px solid darkgrey;
+    width: 430px;
+    margin: 20px;
+    padding: 20px;
+}
+.person-list {
+    border: solid 1px darkgrey;
+    padding: 10px;
+    margin: 5px;
+    width: 300px;
+}
+.filter {
+    margin-left: 45px;
+    font-size: 18px;
+    outline: none;
+}
+.show{
+    color: red;
+    font-size: 12px;
+}
+.create{
+    width: 100px;
+    padding: 5px; 
+    margin:20px 0 0 120px;
+    background: #fff;
+    outline: none;
+}
+label{
+    width: 190px;
+}
+li {
+    list-style-type: none;
+}
+

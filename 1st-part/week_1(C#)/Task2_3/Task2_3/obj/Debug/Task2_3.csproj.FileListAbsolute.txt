@@ -1,0 +1,9 @@
+c:\users\сергей\documents\visual studio 2012\Projects\Task2_3\Task2_3\bin\Debug\Task2_3.exe.config
+c:\users\сергей\documents\visual studio 2012\Projects\Task2_3\Task2_3\bin\Debug\Task2_3.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task2_3\Task2_3\bin\Debug\Task2_3.pdb
+c:\users\сергей\documents\visual studio 2012\Projects\Task2_3\Task2_3\obj\Debug\Task2_3.exe
+c:\users\сергей\documents\visual studio 2012\Projects\Task2_3\Task2_3\obj\Debug\Task2_3.pdb
+C:\Users\Сергей\Documents\Visual Studio 2012\Projects\Task2_3\Task2_3\obj\Debug\Task2_3.csprojResolveAssemblyReference.cache
+D:\AltexSoft-Courses\week_1\Task2_3\Task2_3\bin\Debug\Task2_3.exe.config
+D:\AltexSoft-Courses\week_1\Task2_3\Task2_3\obj\Debug\Task2_3.exe
+D:\AltexSoft-Courses\week_1\Task2_3\Task2_3\obj\Debug\Task2_3.pdb

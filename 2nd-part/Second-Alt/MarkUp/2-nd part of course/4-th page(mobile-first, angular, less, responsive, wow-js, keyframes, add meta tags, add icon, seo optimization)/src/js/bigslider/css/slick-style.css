@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Radjhani Bold";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Rajdhani-Bold.ttf");
+}
+
+.main {
+  animation: bounceInLeft 1s;
+	// width:1170px;
+  // width: 100%;
+	// margin: 100px 0 0 33px;
+}
+
+/* Стили для сладера */
+
+.sl__text {
+	color: #fff;
+	text-align: center;
+	background: #c5c5c5;
+  font-size: 14px;
+  font-family: "Radjhani Bold", sans-serif;
+}
