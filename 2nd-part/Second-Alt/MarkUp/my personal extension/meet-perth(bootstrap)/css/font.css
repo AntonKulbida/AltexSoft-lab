@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "blackjack";
+    src: url(../Fonts/blackjack.otf);
+   }
+@font-face{
+	font-family: "ProximaNova Light";
+	src: url(../Fonts/ProximaNova-Light.ttf);
+}
+@font-face{
+	font-family: "ProximaNova RegularIt";
+	src: url(../Fonts/ProximaNova-RegularIt.ttf);
+}
+@font-face{
+	font-family: "ProximaNova Regular";
+	src: url(../Fonts/ProximaNova-Regular.ttf);
+}
+@font-face{
+	font-family: "ProximaNova SemiboldIt";
+	src: url(../Fonts/ProximaNova-SemiboldIt.ttf);
+}

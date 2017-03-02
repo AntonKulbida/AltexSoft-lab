@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map with weather</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+        #map {
+            width: 100%;
+            min-height: 100%;
+            position: absolute;
+        }
+        </style>
+</head>
+<body>
+    <div id="map"></div>
+
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 6,
+            center: {lat: 49.00, lng: 32.00}
+        });
+        var modal,
+            res,
+            markerCoord,
+            marker,
+            infowindow = new google.maps.InfoWindow(),
+            contentString,
+            xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+
+             google.maps.event.addListener(map, 'click', function (e) {
+                 markerCoord = {lat: e.latLng.lat(), lng: e.latLng.lng()};
+                 makeMarker();
+
+            // Get ajax call to get weather info
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+                    if (xmlhttp.status == 200) {
+                        res = JSON.parse(xmlhttp.responseText);
+                        openModal(res);
+                    }
+                    else if (xmlhttp.status == 400) {
+                        console.log('There was an error 400');
+                    }
+                    else {
+                        console.log('something else other than 200 was returned');
+                    }
+                }
+            };
+            xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + markerCoord.lat + "&lon=" + markerCoord.lng + '&apiKey=05d1a9582076e6fecf5c7a3a363b8328', true);
+            xmlhttp.send();
+        });
+     
+
+ function makeMarker() {
+    return marker ? marker.setPosition(markerCoord) : marker = new google.maps.Marker({
+                position: markerCoord,
+                map: map,
+                title: 'Weather here'
+            });
+}
+     
+    function openModal(res) {
+            if (! res.weather) {
+                contentString = 'To much long, come closer.';
+            } else {
+              var degreez = (res.main.temp - 273.15).toFixed();
+                contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                        '</div>'+
+                        '<div><strong>Place: </strong><span id="place"> ' + res.name + '</span> </div>'+  
+                        '<p><strong>Weather:</strong> <span id="weather">' + res.weather[0].main + '</span></p>'+
+                        '<p><strong>Temperature:</strong> <span id="temperature">' + degreez + '</span>&#176 C</p>'+
+                        '<p><strong>Wind speed:</strong> <span id="wind">' + res.wind.speed + '</span> ms</p>'+ 
+                        '<p><strong>Humidity:</strong> <span id="humidity">' + res.main.humidity + '</span>%</p>'+ 
+                    '</div>';
+            }
+
+        infowindow.close();
+        infowindow.setContent(contentString);
+        infowindow.open(map, marker);
+        }
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV_7vFCk0ri3mP6Mzd9UXUhGHW5UvAbWs&callback=initMap">
+</script>
+</body>
+</html>
