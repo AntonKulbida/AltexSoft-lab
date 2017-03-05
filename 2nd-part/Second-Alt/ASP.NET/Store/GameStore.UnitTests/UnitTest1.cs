@@ -18,7 +18,6 @@ namespace MobileStore.UnitTests
         [TestMethod]
         public void Can_Paginate()
         {
-            // Организация (arrange)
             Mock<IMobileRepository> mock = new Mock<IMobileRepository>();
             mock.Setup(m => m.Mobiles).Returns(new List<Mobile>
             {
@@ -31,10 +30,8 @@ namespace MobileStore.UnitTests
             MobileController controller = new MobileController(mock.Object);
             controller.pageSize = 3;
 
-            // Действие (act)
             MobilesListViewModel result = (MobilesListViewModel)controller.List(null, 2).Model;
 
-            // Утверждение
             List<Mobile> mobiles = result.Mobiles.ToList();
             Assert.IsTrue(mobiles.Count == 2);
             Assert.AreEqual(mobiles[0].Name, "Mobile4");
@@ -45,11 +42,8 @@ namespace MobileStore.UnitTests
         public void Can_Generate_Page_Links()
         {
 
-            // Организация - определение вспомогательного метода HTML - это необходимо
-            // для применения расширяющего метода
             HtmlHelper myHelper = null;
 
-            // Организация - создание объекта PagingInfo
             PagingInfo pagingInfo = new PagingInfo
             {
                 CurrentPage = 2,
@@ -57,13 +51,10 @@ namespace MobileStore.UnitTests
                 ItemsPerPage = 10
             };
 
-            // Организация - настройка делегата с помощью лямбда-выражения
             Func<int, string> pageUrlDelegate = i => "Page" + i;
 
-            // Действие
             MvcHtmlString result = myHelper.PageLinks(pagingInfo, pageUrlDelegate);
 
-            // Утверждение
             Assert.AreEqual(@"<a class=""btn btn-default"" href=""Page1"">1</a>"
                 + @"<a class=""btn btn-default btn-primary selected"" href=""Page2"">2</a>"
                 + @"<a class=""btn btn-default"" href=""Page3"">3</a>",
@@ -73,7 +64,6 @@ namespace MobileStore.UnitTests
         [TestMethod]
         public void Can_Send_Pagination_View_Model()
         {
-            // Организация (arrange)
             Mock<IMobileRepository> mock = new Mock<IMobileRepository>();
             mock.Setup(m => m.Mobiles).Returns(new List<Mobile>
             {
@@ -101,7 +91,6 @@ namespace MobileStore.UnitTests
         [TestMethod]
         public void Can_Filter_Games()
         {
-            // Организация (arrange)
             Mock<IMobileRepository> mock = new Mock<IMobileRepository>();
             mock.Setup(m => m.Mobiles).Returns(new List<Mobile>
             {
@@ -127,7 +116,6 @@ namespace MobileStore.UnitTests
         [TestMethod]
         public void Can_Create_Categories()
         {
-            // Организация - создание имитированного хранилища
             Mock<IMobileRepository> mock = new Mock<IMobileRepository>();
             mock.Setup(m => m.Mobiles).Returns(new List<Mobile> {
                 new Mobile { MobileId = 1, Name = "Mobile1", Category="Sumsung"},
@@ -136,13 +124,10 @@ namespace MobileStore.UnitTests
                 new Mobile { MobileId = 4, Name = "Mobile4", Category="Prestigio"},
             });
 
-            // Организация - создание контроллера
             NavController target = new NavController(mock.Object);
 
-            // Действие - получение набора категорий
             List<string> results = ((IEnumerable<string>)target.Menu().Model).ToList();
 
-            // Утверждение
             Assert.AreEqual(results.Count(), 3);
             Assert.AreEqual(results[0], "Samsung");
             Assert.AreEqual(results[1], "Nokia");
@@ -152,30 +137,24 @@ namespace MobileStore.UnitTests
         [TestMethod]
         public void Indicates_Selected_Category()
         {
-            // Организация - создание имитированного хранилища
             Mock<IMobileRepository> mock = new Mock<IMobileRepository>();
             mock.Setup(m => m.Mobiles).Returns(new Mobile[] {
                 new Mobile { MobileId = 1, Name = "Mobile1", Category="Nokia"},
                 new Mobile { MobileId = 2, Name = "Mobile2", Category="Prestigio"}
             });
 
-            // Организация - создание контроллера
             NavController target = new NavController(mock.Object);
 
-            // Организация - определение выбранной категории
             string categoryToSelect = "Fly";
 
-            // Действие
             string result = target.Menu(categoryToSelect).ViewBag.SelectedCategory;
 
-            // Утверждение
             Assert.AreEqual(categoryToSelect, result);
         }
 
         [TestMethod]
         public void Generate_Category_Specific_Game_Count()
         {
-            /// Организация (arrange)
             Mock<IMobileRepository> mock = new Mock<IMobileRepository>();
             mock.Setup(m => m.Mobiles).Returns(new List<Mobile>
             {
@@ -188,13 +167,11 @@ namespace MobileStore.UnitTests
             MobileController controller = new MobileController(mock.Object);
             controller.pageSize = 3;
 
-            // Действие - тестирование счетчиков товаров для различных категорий
             int res1 = ((MobilesListViewModel)controller.List("Cat1").Model).PagingInfo.TotalItems;
             int res2 = ((MobilesListViewModel)controller.List("Cat2").Model).PagingInfo.TotalItems;
             int res3 = ((MobilesListViewModel)controller.List("Cat3").Model).PagingInfo.TotalItems;
             int resAll = ((MobilesListViewModel)controller.List(null).Model).PagingInfo.TotalItems;
 
-            // Утверждение
             Assert.AreEqual(res1, 2);
             Assert.AreEqual(res2, 2);
             Assert.AreEqual(res3, 1);

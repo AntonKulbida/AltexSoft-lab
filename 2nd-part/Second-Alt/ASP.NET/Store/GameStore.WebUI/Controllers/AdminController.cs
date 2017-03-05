@@ -45,7 +45,6 @@ namespace MobileStore.WebUI.Controllers
             }
             else
             {
-                // Что-то не так со значениями данных
                 return View(mobile);
             }
         }
