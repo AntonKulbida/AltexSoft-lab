@@ -1,0 +1,16 @@
+﻿@using MobileStore.WebUI.Models
+@using MobileStore.WebUI.HtmlHelpers
+@model MobilesListViewModel
+
+@{
+    ViewBag.Title = "Goods";
+}
+
+@foreach (var p in @Model.Mobiles)
+{
+    @Html.Partial("MobileSummary", p)
+}
+
+<div class="btn-group pull-right">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x, category = Model.CurrentCategory }))
+</div>

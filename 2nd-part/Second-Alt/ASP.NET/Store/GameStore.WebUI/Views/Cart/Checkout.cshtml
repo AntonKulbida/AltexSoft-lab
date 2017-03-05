@@ -1,0 +1,42 @@
+﻿@model MobileStore.Domain.Entities.ShippingDetails
+
+@{
+    ViewBag.Title = "MobileStore: order form";
+}
+
+<h2>Make order now</h2>
+<p>Please input your data!</p>
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary();
+    <h3>Data</h3>
+    <div class="form-group">
+        <label>Your name:</label>
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    </div>
+
+    <h3>Address of delivery</h3>
+    foreach (var property in ViewData.ModelMetadata.Properties) {
+        if (property.PropertyName != "Name" && property.PropertyName != "GiftWrap") {
+            <div class="form-group">
+                <label>@(property.DisplayName ?? property.PropertyName)</label>
+                @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
+            </div>
+        }
+    }
+
+    <h3>Options</h3>
+    <div class="checkbox">
+        <label>
+            @Html.EditorFor(x => x.GiftWrap)
+            Gift box?
+        </label>
+    </div>
+
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Work on order" />
+    </div>
+}
+
